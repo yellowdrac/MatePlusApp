@@ -17,9 +17,11 @@ public class PlayerModel : ActorModel
 	
     private Vector2 movementInput;
     private int maxExperience = 100;
+    private int currentLevel;
     private int currentExp;
     [SerializeField] private StatusBar statusBar;
     [SerializeField] private bool isJumping;
+    
     [SerializeField] private bool isAttacking;
     [SerializeField] private bool isChallenging;
     [SerializeField] private bool isHit;
@@ -27,6 +29,7 @@ public class PlayerModel : ActorModel
 
     private void Start()
     {
+        currentLevel = 0;
         currentExp = 0;
         isWalking = false;
         statusBar.SetMaxExperience(maxExperience);
@@ -82,7 +85,12 @@ public class PlayerModel : ActorModel
         int lastCurrentExp;
         lastCurrentExp = currentExp;
         currentExp += expPlus;
+        if (currentExp > 100)
+        {
+            currentLevel += 1;
+        }
         statusBar.SetExperience(currentExp,lastCurrentExp);
+        statusBar.SetLevel(currentLevel);
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -109,7 +117,7 @@ public class PlayerModel : ActorModel
         }
         else
         {
-            if (other.gameObject.tag == "MeleeEnemy")
+                if (other.gameObject.tag == "MeleeEnemy")
             {
                 
                 Debug.Log("Hit Player");
@@ -148,6 +156,7 @@ public class PlayerModel : ActorModel
     }
     public void OnAttack(InputAction.CallbackContext value)
     {
+        Feedback.Do(eFeedbackType.SwordAttack);
         if (isHit) return;
         if (isChallenging) return;
         if (isAttacking) return;
@@ -175,9 +184,15 @@ public class PlayerModel : ActorModel
         yield return new WaitForSeconds(0.5f);
         isHit = false;
     }
-
+    public bool IsChallenging {
+        set { isChallenging = value; }
+        get { return isChallenging; }
+    }
     public bool IsJumping => isJumping;
     public bool IsAttacking => isAttacking;
     public bool IsHit => isHit;
-
+    public float JumpForce {
+    set { jumpForce = value; }
+    get { return jumpForce; }
+    }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 public class StatusBar : MonoBehaviour
@@ -7,6 +8,7 @@ public class StatusBar : MonoBehaviour
     private float expIncreaseInterval = 1f; // Intervalo de aumento de experiencia en segundos
     
     public Slider slider;
+    [SerializeField] public TextMeshProUGUI textComponent;
     // Start is called before the first frame update
     public void SetExperience(int exp, int lastExp)
     {
@@ -25,6 +27,15 @@ public class StatusBar : MonoBehaviour
             {
                 lastExp++;
                 slider.value = lastExp;
+
+                // Si alcanza el nivel máximo, reiniciar la experiencia y actualizar el valor de la barra
+                if (lastExp >= 100)
+                {
+                    expToAdd -= 100;
+                    lastExp = 0;
+                    slider.value = 0;
+                }
+
                 elapsedTime = 0f;
             }
 
@@ -36,5 +47,9 @@ public class StatusBar : MonoBehaviour
     {
         slider.maxValue = exp;
         slider.value = 0;
+    }
+    public void SetLevel(int level)
+    {
+        textComponent.text = level.ToString();
     }
 }

@@ -19,6 +19,7 @@ namespace Game
 		private RemoteSister remoteSister;
 		private Zone zone;
 		[SerializeField] private PlayerModel player;
+		
 		private List<GameObject> zonesToBePlayed;
 		private List<Zone> zonesInGame;
 		
@@ -56,7 +57,7 @@ namespace Game
 			float originX = 0;
 			float originY = 0;
 			int auxNumOfExercises = numOfExercises;
-
+			GameObject lastZone = null;
 			for (int i = 0; i < numOfExercises; i++)
 			{
 				int id = Random.Range(0, zonesToBePlayed.Count);
@@ -66,7 +67,13 @@ namespace Game
 				GameObject goZone= Instantiate(zonesToBePlayed[id], new Vector2(originX, originY), Quaternion.identity);
 				zonesInGame.Add(goZone.GetComponent<Zone>());
 				
+				
+				
 				originX += zonesToBePlayed[id].transform.GetScaleX() / 2;
+				if (i == numOfExercises - 1)
+				{
+					lastZone = goZone;
+				}
 
 				if (auxNumOfExercises <= zonesToBePlayed.Count)
 				{
@@ -74,8 +81,20 @@ namespace Game
 				}
 				auxNumOfExercises--;
 			}
+			if (lastZone != null)
+			{
+				AddEndTrigger(lastZone, originX);
+			}
 			
-			
+		}
+		private void AddEndTrigger(GameObject lastZone, float finalXPosition)
+		{
+			// Crear un nuevo GameObject para el trigger
+			GameObject endTrigger = new GameObject("EndTrigger");
+			endTrigger.transform.position = new Vector2(finalXPosition, lastZone.transform.position.y);
+			BoxCollider2D trigger = endTrigger.AddComponent<BoxCollider2D>();
+			trigger.isTrigger = true;
+			endTrigger.AddComponent<ZoneEndTrigger>();
 		}
 		public RemoteSister RemoteData
 		{

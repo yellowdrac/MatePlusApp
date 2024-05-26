@@ -7,6 +7,7 @@
 	        case eFeedbackType.StartChallenge:
 	        case eFeedbackType.ChallengeAccepted:
 	        case eFeedbackType.WalkGravel:
+	        case eFeedbackType.SwordAttack:
 	        case eFeedbackType.ButtonClick:
 			case eFeedbackType.ButtonHover:
 			case eFeedbackType.IntroMusic:	

@@ -27,7 +27,8 @@ public enum eScreen
     Game,
     Menu,
     Loading,
-    Introduction
+    Introduction,
+    Final
 }
 
 public enum eDirection
@@ -48,7 +49,8 @@ public enum eFeedbackType
     StartChallenge,
     ChallengeAccepted,
     WalkGravel,
-    IntroMusic
+    IntroMusic,
+    SwordAttack
 }
 
 public enum eAnimation
@@ -59,7 +61,11 @@ public enum eAnimation
     Attack,
     Death,
     Hit,
-    Jump
+    Jump,
+    Dissapear,
+    Explote,
+    IceMelt,
+    IceMeltHigh
 }
 public enum eEnemyType
 {

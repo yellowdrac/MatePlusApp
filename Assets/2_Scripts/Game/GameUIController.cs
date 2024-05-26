@@ -1,6 +1,7 @@
 using System.Collections;
 using DG.Tweening;
 using Game;
+using PowerTools;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Networking;
@@ -20,11 +21,17 @@ public class GameUIController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI option2TextChallenge; // Referencia al texto de la opcion 2
     [SerializeField] private TextMeshProUGUI option3TextChallenge; // Referencia al texto de la opcion 3
     [SerializeField] private TextMeshProUGUI option4TextChallenge; // Referencia al texto de la opcion 4
-    [SerializeField] private TextMeshProUGUI option5TextChallenge; // Referencia al texto de la opcion 5
+    [SerializeField] private TextMeshProUGUI option5TextChallenge;
+    [SerializeField] private TextMeshProUGUI textCompChlallengeAfter;// Referencia al texto de la opcion 5
     [SerializeField] private Button confirmButton; // Referencia al texto del boton aceptar
     [SerializeField] private Button declineButton; // Referencia al texto del boton declinar
     [SerializeField] private Image imageChallenge;
-    
+    [SerializeField] private Image imageChallengeOption1;
+    [SerializeField] private Image imageChallengeOption2;
+    [SerializeField] private Image imageChallengeOption3;
+    [SerializeField] private Image imageChallengeOption4;
+    [SerializeField] private Image imageChallengeOption5;
+    public Timer timer;
     
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private RectTransform content;
@@ -40,7 +47,32 @@ public class GameUIController : MonoBehaviour
             crtStartChallenge = StartCoroutine(CRTStartChallenge(zone));
         };
     }
+    
 
+    public void StartChallengeTimer(float duration)
+    {
+        if (timer != null)
+        {
+            Debug.Log("Entrando startchallngetimer");
+            timer.StartTimer(duration);
+        }
+    }
+
+    public void PauseChallengeTimer()
+    {
+        if (timer != null)
+        {
+            timer.PauseTimer();
+        }
+    }
+
+    public void ResumeChallengeTimer()
+    {
+        if (timer != null)
+        {
+            timer.ResumeTimer();
+        }
+    }
     IEnumerator CRTStartChallenge(Zone zone)
     {
         GameController.Instance.Zone = zone;
@@ -55,11 +87,30 @@ public class GameUIController : MonoBehaviour
         
         // Cargar la imagen desde la URL
         StartCoroutine(LoadImage(imageUrl, imageChallenge));
-        option1TextChallenge.text = cs.leftpaper.options[0].optionText;
-        option2TextChallenge.text = cs.leftpaper.options[1].optionText;
-        option3TextChallenge.text = cs.leftpaper.options[2].optionText;
-        option4TextChallenge.text = cs.leftpaper.options[3].optionText;
-        option5TextChallenge.text = cs.leftpaper.options[4].optionText;
+
+        if (!cs.leftpaper.specialSymbols)
+        {
+            option1TextChallenge.text = cs.leftpaper.options[0].optionText;
+            option2TextChallenge.text = cs.leftpaper.options[1].optionText;
+            option3TextChallenge.text = cs.leftpaper.options[2].optionText;
+            option4TextChallenge.text = cs.leftpaper.options[3].optionText;
+            option5TextChallenge.text = cs.leftpaper.options[4].optionText;
+        }else
+        {
+            Debug.Log(cs.leftpaper);
+            StartCoroutine(LoadImage(cs.leftpaper.options[0].optionImg, imageChallengeOption1));
+            imageChallengeOption1.enabled = true;
+            StartCoroutine(LoadImage(cs.leftpaper.options[1].optionImg, imageChallengeOption2));
+            imageChallengeOption2.enabled = true;
+            StartCoroutine(LoadImage(cs.leftpaper.options[2].optionImg, imageChallengeOption3));
+            imageChallengeOption3.enabled = true;
+            StartCoroutine(LoadImage(cs.leftpaper.options[3].optionImg, imageChallengeOption4));
+            imageChallengeOption4.enabled = true;
+            StartCoroutine(LoadImage(cs.leftpaper.options[4].optionImg, imageChallengeOption5));
+            imageChallengeOption5.enabled = true;
+            
+        }
+        
         correctOptions= new bool[5];
         correctOptions[0] = cs.leftpaper.options[0].isCorrect;
         correctOptions[1] = cs.leftpaper.options[1].isCorrect;
@@ -94,6 +145,8 @@ public class GameUIController : MonoBehaviour
             yield return new WaitForSeconds(3);
 
             challengeContainer.SetActive(true);
+            Debug.Log("Antes de startchallngetimer");
+            StartChallengeTimer(120f);
         }
         else
         {
@@ -122,8 +175,30 @@ public class GameUIController : MonoBehaviour
     public void OptionSelected(int option)
     {
         // Actualiza el texto del popup de confirmación con la opción seleccionada
-        
-        confirmationText.text = $"¿Estás seguro que deseas elegir la opción: {cs.leftpaper.options[option-1].optionText}?";
+        string optionLetter = "";
+
+        if (option == 1)
+        {
+            optionLetter = "A)";
+        }
+        else if (option == 2)
+        {
+            optionLetter = "B)";
+        }
+        else if (option == 3)
+        {
+            optionLetter = "C)";
+        }
+        else if (option == 4)
+        {
+            optionLetter = "D)";
+        }
+        else if (option == 5)
+        {
+            optionLetter = "E)";
+        }
+
+        confirmationText.text = $"¿Estás seguro que deseas elegir la opción {optionLetter}?";
         // Muestra el popup de confirmación
         optionSelected = option-1;
         confirmationPopUp.SetActive(true);
@@ -181,7 +256,7 @@ public class GameUIController : MonoBehaviour
                     }
 
                     StartCoroutine(DoFade());
-
+                    GameController.Instance.Player.IsChallenging = false;
 
                 }
             }
@@ -196,12 +271,137 @@ public class GameUIController : MonoBehaviour
     // Corrutina para cambiar de imagen
     private IEnumerator DoFade()
     {
+        Debug.Log("Estoy viendo la zona:");
+        Debug.Log(GameController.Instance.Zone.ZoneID);
         yield return new WaitForSeconds(3);
         canvasGroupBlack.DOFade(1, 1);
-        yield return new WaitForSeconds(1);
-        GameController.Instance.Zone.InitialAnim.SetActive(false);
-        GameController.Instance.Zone.FinishedAnim.SetActive(true);
-        canvasGroupBlack.DOFade(0, 1);
+        
+        
+        if (GameController.Instance.Zone.ZoneID == 0)
+        {
+            
+            textCompChlallengeAfter.text = "Algo parece estar desbloqueandose en el camino...";
+            yield return new WaitForSeconds(5);
+            GameController.Instance.Zone.InitialAnim.SetActive(false);
+            GameController.Instance.Zone.FinishedAnim.SetActive(true);
+            
+            GameController.Instance.Zone.ChallengeBlock.SetActive(false);
+            canvasGroupBlack.DOFade(0, 1);
+        }
+        if (GameController.Instance.Zone.ZoneID == 1)
+        {
+            
+            textCompChlallengeAfter.text = "Parece que ahora tienes más fuerza en las piernas para ejecutar el salto...";
+            yield return new WaitForSeconds(5);
+            GameController.Instance.Player.JumpForce = 1000;
+            StartCoroutine(ResetJumpForceAfterDistance(10, 500));
+            
+            GameController.Instance.Zone.ChallengeBlock.SetActive(false);
+            canvasGroupBlack.DOFade(0, 1);
+        }
+        if (GameController.Instance.Zone.ZoneID == 2)
+        {
+            
+            textCompChlallengeAfter.text = "El humo se está disipando, parece ser una plataforma en la que se puede saltar...";
+            yield return new WaitForSeconds(5);
+            canvasGroupBlack.DOFade(0, 1);
+            GameController.Instance.Zone.FinishedAnim.SetActive(true);
+            yield return new WaitForSeconds(1);
+            GameController.Instance.Zone.ChallengeBlock.SetActive(false);
+            SpriteRenderer spriteRenderer = GameController.Instance.Zone.FinishedAnim.GetComponent<SpriteRenderer>();
+            SmokeModel smokeModel = GameController.Instance.Zone.InitialAnim.GetComponent<SmokeModel>();
+            if (spriteRenderer != null)
+            {
+                // Asegurarse de que el color inicial tenga alfa en 0
+                Color color = spriteRenderer.color;
+                color.a = 0f;
+                spriteRenderer.color = color;
+                
+                // Usar DOTween para hacer el fade del alfa de 0 a 1 en 1 segundo
+                spriteRenderer.DOFade(1f, 1f);
+                
+                if (smokeModel == null)
+                {
+                    Debug.Log("no esta bien");
+                }
+                smokeModel.StartAnim("dissappear");
+            }
+        }
+        if (GameController.Instance.Zone.ZoneID == 3)
+        {
+            textCompChlallengeAfter.text = "Parece que ahora que sabes los datos finales del barril, se está empezando a caer...";
+            yield return new WaitForSeconds(5);
+            canvasGroupBlack.DOFade(0, 1);
+            GameController.Instance.Zone.FinishedAnim.SetActive(true);
+            yield return new WaitForSeconds(1);
+            GameController.Instance.Zone.ChallengeBlock.SetActive(false);
+            
+            SmokeModel barrelModel = GameController.Instance.Zone.FinishedAnim.GetComponent<SmokeModel>();
+            if (barrelModel == null)
+            {
+                Debug.Log("no esta bien");
+            }
+            barrelModel.StartAnim("explote");
+            yield return new WaitForSeconds(0.2f);
+            canvasGroupBlack.DOFade(1, 1);
+            textCompChlallengeAfter.text = "El barril ha explotado, el camino ahora es libre...";
+            yield return new WaitForSeconds(2);
+            GameController.Instance.Zone.InitialAnim.SetActive(false);
+            yield return new WaitForSeconds(2);
+            canvasGroupBlack.DOFade(0, 1);
+            
+        }
+        if (GameController.Instance.Zone.ZoneID == 4)
+        {
+            textCompChlallengeAfter.text = "Parece que el hielo se está empezando a descongelar...";
+            yield return new WaitForSeconds(5);
+            canvasGroupBlack.DOFade(0, 1);
+            GameController.Instance.Zone.FinishedAnim.SetActive(true);
+            yield return new WaitForSeconds(1);
+            GameController.Instance.Zone.ChallengeBlock.SetActive(false);
+            
+            IceModel iceModel = GameController.Instance.Zone.FinishedAnim.GetComponent<IceModel>();
+            if (iceModel == null)
+            {
+                Debug.Log("no esta bien");
+            }
+            iceModel.StartAnim("meltHigh");
+            yield return new WaitForSeconds(1);
+            iceModel.StartAnim("melt");
+        }
+        if (GameController.Instance.Zone.ZoneID == 5)
+        {
+            textCompChlallengeAfter.text = "Parece que el hielo se está empezando a descongelar...";
+            yield return new WaitForSeconds(5);
+            canvasGroupBlack.DOFade(0, 1);
+            GameController.Instance.Zone.FinishedAnim.SetActive(true);
+            yield return new WaitForSeconds(1);
+            GameController.Instance.Zone.ChallengeBlock.SetActive(false);
+            
+            IceModel iceModel = GameController.Instance.Zone.FinishedAnim.GetComponent<IceModel>();
+            if (iceModel == null)
+            {
+                Debug.Log("no esta bien");
+            }
+            iceModel.StartAnim("meltHigh");
+            yield return new WaitForSeconds(1);
+            iceModel.StartAnim("melt");
+        }
+    }
+    // Corrutina para resetear la fuerza del salto
+    private IEnumerator ResetJumpForceAfterDistance(float distance, float newJumpForce)
+    {
+        PlayerModel player = GameController.Instance.Player;
+        float startX = player.transform.position.x;
+
+        // Espera hasta que el jugador haya avanzado la distancia especificada en el eje x
+        while (player.transform.position.x < startX + distance)
+        {
+            yield return null; // Espera un frame y vuelve a comprobar
+        }
+
+        // Restablece el JumpForce a su nuevo valor
+        player.JumpForce = newJumpForce;
     }
     // Corrutina para agregar experiencia después de un retraso
     private IEnumerator DelayedPlusExp(int exp, float delayTime)

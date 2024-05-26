@@ -8,10 +8,12 @@ namespace Game
         [SerializeField] private int zoneId;
         [SerializeField] private GameObject initialAnim;
         [SerializeField] private GameObject finishedAnim;
+        [SerializeField] private GameObject challengeBlock;
         [SerializeField] private eEnemyType enemyType;
         [SerializeField] private AnimationData enemyData;
         [SerializeField] private List<Transform> spawnEnemyPositions;
         public int ZoneID => zoneId;
+        public GameObject ChallengeBlock => challengeBlock;
         public GameObject InitialAnim => initialAnim;
         public GameObject FinishedAnim => finishedAnim;
         public AnimationData EnemyData => enemyData;
