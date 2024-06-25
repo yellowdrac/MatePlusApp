@@ -257,7 +257,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: 8e7d968152059434ebea32606d0da5d8, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -353,13 +353,17 @@ MonoBehaviour:
   rb: {fileID: 1801798776204459660}
   speed: 3
   jumpForce: 0
+  hitForce: 200
   compRendering: {fileID: 8630727869498802159}
   meleeComponent: {fileID: 2210519017744370378}
+  maxHealth: 5
   statusBar: {fileID: 0}
   isJumping: 0
   isAttacking: 0
   isChallenging: 0
+  isHit: 0
   isWalking: 0
+  isDeath: 0
   player: {fileID: 0}
 --- !u!114 &8630727869498802159
 MonoBehaviour:

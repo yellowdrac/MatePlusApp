@@ -49,7 +49,10 @@ public class SceneLoader : MonoBehaviour
 
     public void ChangeScreen(eScreen nextScreen, bool asapLoading = true)
     {
-        previousScreen = currentScreen;
+    
+        previousScreen = currentScreen;    
+    
+        
         currentScreen = nextScreen;
         string nextScreenName = nextScreen.ToString();
         loadingScreenOP = SceneManager.LoadSceneAsync(nextScreenName);

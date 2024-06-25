@@ -49,8 +49,21 @@ public enum eFeedbackType
     StartChallenge,
     ChallengeAccepted,
     WalkGravel,
+    DeathScream,
+    WalkSnow,
+    WalkMud,
+    WalkWood,
+    WalkGrass,
+    WalkSand,
     IntroMusic,
-    SwordAttack
+    SwordAttack,
+    CastleOpened,
+    PortalPassed,
+    SnowZone5Ambient,
+    SandZone23Ambient,
+    WoodZone6Ambient,
+    LavaZone8Ambient,
+    MudZone7Ambient,
 }
 
 public enum eAnimation
@@ -65,7 +78,8 @@ public enum eAnimation
     Dissapear,
     Explote,
     IceMelt,
-    IceMeltHigh
+    IceMeltHigh,
+    Revive
 }
 public enum eEnemyType
 {

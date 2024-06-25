@@ -15,6 +15,10 @@ public class Timer : MonoBehaviour
         
     }
 
+    public float getTimer()
+    {
+        return timeRemaining;
+    }
     private void Update()
     {
         

@@ -11,9 +11,15 @@ public class EnemyRendering : ActorRendering
     
     public void PlayAnimation(eAnimation nextAnimation)
     {
-        bool conditionsToSkip = enemyModel.IsAttacking || enemyModel.IsJumping;
+        bool isAttacking = enemyModel.IsAttacking;
+        bool isDeath = enemyModel.IsDeath;
+        bool isJumping = enemyModel.IsJumping;
+        bool isHit = enemyModel.IsHit;
+    
+        
+        bool conditionsToSkip = isAttacking || isDeath || isJumping || isHit;
 
-        if (ShouldSkipAnimation(nextAnimation, conditionsToSkip)) return;
+        if (ShouldSkipAnimation(nextAnimation, conditionsToSkip, isAttacking, isDeath, isJumping, isHit)) return;
 
         currentAnimation = nextAnimation;
         
@@ -38,9 +44,18 @@ public class EnemyRendering : ActorRendering
 			
                 compAnim.Play(animData.animations[nextAnimation].animations[model.LastDirection]);
                 break;
+            
+            case eAnimation.Death:
+                SetOrientation(model.LastDirection);
+                compAnim.Play(animData.animations[nextAnimation].animations[model.LastDirection]);
+                break;
             case eAnimation.Attack:
                 SetOrientation(model.LastDirection);
 			
+                compAnim.Play(animData.animations[nextAnimation].animations[model.LastDirection]);
+                break;
+            case eAnimation.Hit:
+                //SetOrientation(model.LastDirection);
                 compAnim.Play(animData.animations[nextAnimation].animations[model.LastDirection]);
                 break;
 		

@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 using TMPro;
 namespace Game
@@ -9,7 +11,7 @@ namespace Game
 		[SerializeField] private GameUIController gameUIController;
 		[SerializeField] private RemoteController remoteController;
 		[SerializeField] private EnemyController enemyController;
-		
+		[SerializeField] private CanvasGroup gameObjectBlacInit;
 		[SerializeField] private GameObject[] zones;
 		[SerializeField] private bool[] zonesActivation;
 		
@@ -30,14 +32,42 @@ namespace Game
 		{
 			instance = this;
 		}
-
 		private void Start()
 		{
-			remoteController.DownloadRemote();
+			StartCoroutine(InitializeGame());
+		}
+		private IEnumerator InitializeGame()
+		{
+			// Espera a que DownloadRemote termine
+			yield return remoteController.DownloadRemote();
+        
+			// Ahora ejecuta GenerateZones
 			GenerateZones();
+
+			PlayerLevelInfo.totalQuestions = 0;
+			PlayerLevelInfo.ansCorrectQuestionsPerZone = new int[8];
+			PlayerLevelInfo.totalAnsCorrectQuestions = 0;
+			PlayerLevelInfo.timePerZone = new float[8];
+			PlayerLevelInfo.questionsPerZone = new int[8];
+			
+			PlayerLevelInfo.ansCorrectQuestionsPerArea = new int[5];
+			PlayerLevelInfo.timePerArea = new float[5];
+			PlayerLevelInfo.questionsPerArea = new int[5];
+			
 			enemyController.GenerateEnemies();
+			yield return new WaitForSeconds(5f);
+			gameObjectBlacInit.DOFade(0, 1);
+			yield return new WaitForSeconds(1f);
 		}
 
+		public void GetZoneId()
+		{
+			Debug.Log(zone);
+		}
+		public void DoFade()
+		{
+			gameUIController.FadeDeath();
+		}
 		public void StartChallenge(Zone zone)
 		{
 			gameUIController.StartChallenge(zone);
@@ -45,21 +75,37 @@ namespace Game
 		private void GenerateZones()
 		{
 			zonesToBePlayed = new List<GameObject>();
+			Debug.Log(remoteSister.activities.Length);
 			zonesInGame = new List<Zone>();
-			for (int i = 0; i < zones.Length; i++)
+			foreach (var activity in remoteSister.activities)
 			{
-				if (zonesActivation[i] == true)
+				foreach (var challenge in activity.challenges)
 				{
-					zonesToBePlayed.Add(zones[i]);
+					Debug.Log(activity.learningActivity);
+					if (activity.learningActivity.StartsWith("A"))
+					{
+						if (int.TryParse(activity.learningActivity.Substring(1), out int zoneIndex) && zoneIndex <= zones.Length)
+						{
+							Debug.Log("zoneIndex");
+							Debug.Log(zoneIndex);
+							zonesToBePlayed.Add(zones[zoneIndex-1]);
+						}
+					}
 				}
+				
 			}
+			Debug.Log("zonesToBePlayed.Count");
+			
+			Debug.Log(zonesToBePlayed.Count);
+			
 
 			float originX = 0;
 			float originY = 0;
-			int auxNumOfExercises = numOfExercises;
+			int auxNumOfExercises = remoteSister.totalActivities;
 			GameObject lastZone = null;
-			for (int i = 0; i < numOfExercises; i++)
+			for (int i = 0; i < remoteSister.totalActivities; i++)
 			{
+				
 				int id = Random.Range(0, zonesToBePlayed.Count);
 
 				originX += zonesToBePlayed[id].transform.GetScaleX() / 2;
@@ -67,10 +113,12 @@ namespace Game
 				GameObject goZone= Instantiate(zonesToBePlayed[id], new Vector2(originX, originY), Quaternion.identity);
 				zonesInGame.Add(goZone.GetComponent<Zone>());
 				
-				
-				
+				Zone zoneComponent = goZone.GetComponent<Zone>();
+				zoneComponent.HideZone();
+				Debug.Log(zoneComponent.ZoneID);
+			
 				originX += zonesToBePlayed[id].transform.GetScaleX() / 2;
-				if (i == numOfExercises - 1)
+				if (i == remoteSister.totalActivities - 1)
 				{
 					lastZone = goZone;
 				}
@@ -81,8 +129,10 @@ namespace Game
 				}
 				auxNumOfExercises--;
 			}
+			
 			if (lastZone != null)
 			{
+				lastZone.GetComponent<Zone>().DestroyPortal();
 				AddEndTrigger(lastZone, originX);
 			}
 			
@@ -93,7 +143,9 @@ namespace Game
 			GameObject endTrigger = new GameObject("EndTrigger");
 			endTrigger.transform.position = new Vector2(finalXPosition, lastZone.transform.position.y);
 			BoxCollider2D trigger = endTrigger.AddComponent<BoxCollider2D>();
+			
 			trigger.isTrigger = true;
+			trigger.size = new Vector2(1, 30);
 			endTrigger.AddComponent<ZoneEndTrigger>();
 		}
 		public RemoteSister RemoteData

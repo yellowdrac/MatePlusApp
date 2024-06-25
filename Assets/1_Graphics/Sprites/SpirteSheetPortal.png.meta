@@ -1,0 +1,1988 @@
+fileFormatVersion: 2
+guid: 60fc208edd9ac5247988d1d68cc00c25
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpirteSheetPortal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ac499427d5a814a8a73f9774385926
+      internalID: 1478267155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_1
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed3bd25a6e89d94a863891b00bed276
+      internalID: 1911488752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_2
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b6afd6aa66f1a4ab4b4eb7633a2508
+      internalID: -2050502268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_3
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05092bf12a40554fa7263c581bdd123
+      internalID: -835758205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_4
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01257c23335b6e342bdeedd4e3730dda
+      internalID: 99275151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_5
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4845eeba552791244bf052bf193df75c
+      internalID: 183065748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_6
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba489e8e42135f647b16ffc5d17a145d
+      internalID: 1832148549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_7
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72ae376f01be7c4ca9f328443779aee
+      internalID: 1017537534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_8
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f65f320f60b9045bd54d2fc4dfe88e
+      internalID: -1592894220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_9
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 3840
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abb2fbd681e54547b147396f404731e
+      internalID: 1618725593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da78422226e02824bb0b784f4e22faf8
+      internalID: 781990112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_11
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d5d3124ce6bff4f88fdaa7251961f7
+      internalID: 501524973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_12
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a244f6c18b1c7e459999406e59ace6f
+      internalID: 1915887274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_13
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52db239cf9e88f48b24255eb394a353
+      internalID: -2038893304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_14
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a89b2206c9b77d48ac4281db6a44f9a
+      internalID: -630175571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_15
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724e01ebcfa48dd47a78568d9ab62bd3
+      internalID: 1070870885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_16
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2f154d0a96e604c8b74ce5fe05635c
+      internalID: 1468063915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_17
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68285cb2753e4f742ab2b5b91cf2c25f
+      internalID: -378046982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_18
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653d3ffd13accb945839b68e74473edf
+      internalID: 2009600553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_19
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 3360
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa29d1dfcb032434b9fb837a29e38c63
+      internalID: -1436836245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f74e80aced1e44fa6c3043d1d01f63
+      internalID: -1845648827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_21
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30a198b378cb844a8be8a42ebf2ae18
+      internalID: 1970776054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_22
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330110905ef6daf45afed7dc7ca89157
+      internalID: -611905436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_23
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09bfd04aabab03468e12e81bbe870f2
+      internalID: -1968970218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_24
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8e34d1fa96c574c8d57d4b25192512
+      internalID: 255284726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_25
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6415be38290214b4990419d0a8beea28
+      internalID: 1787236475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_26
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff514c4adc91d4a4b87a13d60f1ecda9
+      internalID: 576545849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_27
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6842a99978a8e764b89737a256774182
+      internalID: -475697469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_28
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bc96f208874734e826875710a87e5a
+      internalID: 1555496054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_29
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 2880
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b278b0364d6a3449abe5219163812d
+      internalID: -1194378771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49edbe2935b9a734fad2b268edf1581b
+      internalID: -639508438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_31
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823af7e28a935504da80c213b95568fd
+      internalID: -1408490702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_32
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5d876d857f8704abffb89ba19029e2
+      internalID: -1916639978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_33
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400f624e55891ab4594c89b053b1cc7e
+      internalID: 1447236525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_34
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb749228951cca1469b2c26186d30b92
+      internalID: -2022576141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_35
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc82f24242fd1241ad706a64f361ea3
+      internalID: -1111197048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_36
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f2d8e80186a6d4386ee437dd21f1e6
+      internalID: -616224684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_37
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab58ba6f2fe22f4888645cf5ebe12a2
+      internalID: -790347251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_38
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ca9bbb80ad59c47b7bac55d6f6cf6d
+      internalID: 1163065881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_39
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 2400
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bf87250d4729044882fa39ecefe925
+      internalID: 322403753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4d27e1b8cdf1b4ea62406abeaf8489
+      internalID: 373376593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_41
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df7df07e26a9a346a67f7638ba032c6
+      internalID: 2124800160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_42
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a08f68e84d62e7408d258ae5315f534
+      internalID: -1896077065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_43
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48edea4fdb688b04ba3a5de3fb25a279
+      internalID: -1427814023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_44
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad4768712cdc1449b27dff1d3be20e7
+      internalID: 170050524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_45
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcd06bca78274d4086d678a1df8fd38
+      internalID: -467168668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_46
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bec73829cc6ef14cbb33324e2a4e727
+      internalID: -1723960938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_47
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f2c9ac55b846a438d400f640171253
+      internalID: -78136389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_48
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590b552fcba67ff4b8565a6e14fea3db
+      internalID: -109804645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_49
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 1920
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20667b308a58b4f468ca881abcfc9946
+      internalID: -656305449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16b28574f79de74b801b0cb7134768e
+      internalID: 1977121334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_51
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334016ff07678b540bddf1fb018366fa
+      internalID: -757251553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_52
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c365458d54447484fa949efe641c0a5f
+      internalID: -759826796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_53
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a15d160b5345cf4cb397da32ccee090
+      internalID: 220699569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_54
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7342e3ac97ee1b24fa1586624a95f103
+      internalID: 709707717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_55
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9083cda52e77dee48911a3ec0bddb7e6
+      internalID: -1864440153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_56
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4282d5650520446966f2ea36267b8a
+      internalID: -1295540752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_57
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fecbb7fa9ae0d4a9cb53e01e75c898
+      internalID: -1795952375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_58
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bce7d3ac6b4014a8af903ffe169421
+      internalID: -1714934997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_59
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 1440
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f2d70a423ed774fb8666bf09c52ec1
+      internalID: -737140686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b2dfc1bf9336444a6b75f787eecf9f
+      internalID: 1212152017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_61
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1fce963c4e41446a9f997dcb01325a
+      internalID: 1741413854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_62
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3744932a363e0bb4cbb94719a99e997e
+      internalID: 1763380898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_63
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402c87288448d1b4ea81c7df01442864
+      internalID: -1712587158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_64
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5652fccb41d2e64d8070649a5544784
+      internalID: -1843682674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_65
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e11715a6132b64a961bdfe9cb7b02e
+      internalID: -429699211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_66
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2118b57f9f19a9548a182bcb7fd25cf9
+      internalID: -1857311452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_67
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091604d62b5788d4698311114cff9e77
+      internalID: 880169784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_68
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80e3e46479c7c84a853a430ef35fe1b
+      internalID: -1707682583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_69
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 960
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc06e5a3c49d295479c8e0f774a6a477
+      internalID: 589094071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fc30424201c75439406ba90c7ef89b
+      internalID: 1926285458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_71
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6b312e74e35714e8e8981a0dc6a9e8
+      internalID: -640614191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_72
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a84d20cdd96a54e8745f0857f30352
+      internalID: -341945358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_73
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0349db72ef9f2ab4e9702cd3685f3194
+      internalID: -639545074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_74
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35100f5ca820fd4da73950b0182f18a
+      internalID: 1797235571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_75
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02906ad89daf40a45b7f75114ddf5cf1
+      internalID: -1009838844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_76
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96387ba1fd1c79d45bbc3b6d28645f48
+      internalID: -860837943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_77
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3a2c10145a782459b50735d3d0697e
+      internalID: -701988586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_78
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2626d2772c193464bb3f0111e4c4304e
+      internalID: 446772937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_79
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 480
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec735c920a918b4da1de1ecf43f0768
+      internalID: -813671507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0310eed8ef0c948b504d817210cb42
+      internalID: -1239476460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_81
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 0
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d63c7d3d7145e45afb4ba6537b387a
+      internalID: 218773850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_82
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 0
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2b775790394b94eace3a61765a21c1
+      internalID: 1648287904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpirteSheetPortal_83
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 0
+        width: 533
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650ee3684ed13194e816189fcf93d3ec
+      internalID: -1551289808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpirteSheetPortal_0: 1478267155
+      SpirteSheetPortal_1: 1911488752
+      SpirteSheetPortal_10: 781990112
+      SpirteSheetPortal_11: 501524973
+      SpirteSheetPortal_12: 1915887274
+      SpirteSheetPortal_13: -2038893304
+      SpirteSheetPortal_14: -630175571
+      SpirteSheetPortal_15: 1070870885
+      SpirteSheetPortal_16: 1468063915
+      SpirteSheetPortal_17: -378046982
+      SpirteSheetPortal_18: 2009600553
+      SpirteSheetPortal_19: -1436836245
+      SpirteSheetPortal_2: -2050502268
+      SpirteSheetPortal_20: -1845648827
+      SpirteSheetPortal_21: 1970776054
+      SpirteSheetPortal_22: -611905436
+      SpirteSheetPortal_23: -1968970218
+      SpirteSheetPortal_24: 255284726
+      SpirteSheetPortal_25: 1787236475
+      SpirteSheetPortal_26: 576545849
+      SpirteSheetPortal_27: -475697469
+      SpirteSheetPortal_28: 1555496054
+      SpirteSheetPortal_29: -1194378771
+      SpirteSheetPortal_3: -835758205
+      SpirteSheetPortal_30: -639508438
+      SpirteSheetPortal_31: -1408490702
+      SpirteSheetPortal_32: -1916639978
+      SpirteSheetPortal_33: 1447236525
+      SpirteSheetPortal_34: -2022576141
+      SpirteSheetPortal_35: -1111197048
+      SpirteSheetPortal_36: -616224684
+      SpirteSheetPortal_37: -790347251
+      SpirteSheetPortal_38: 1163065881
+      SpirteSheetPortal_39: 322403753
+      SpirteSheetPortal_4: 99275151
+      SpirteSheetPortal_40: 373376593
+      SpirteSheetPortal_41: 2124800160
+      SpirteSheetPortal_42: -1896077065
+      SpirteSheetPortal_43: -1427814023
+      SpirteSheetPortal_44: 170050524
+      SpirteSheetPortal_45: -467168668
+      SpirteSheetPortal_46: -1723960938
+      SpirteSheetPortal_47: -78136389
+      SpirteSheetPortal_48: -109804645
+      SpirteSheetPortal_49: -656305449
+      SpirteSheetPortal_5: 183065748
+      SpirteSheetPortal_50: 1977121334
+      SpirteSheetPortal_51: -757251553
+      SpirteSheetPortal_52: -759826796
+      SpirteSheetPortal_53: 220699569
+      SpirteSheetPortal_54: 709707717
+      SpirteSheetPortal_55: -1864440153
+      SpirteSheetPortal_56: -1295540752
+      SpirteSheetPortal_57: -1795952375
+      SpirteSheetPortal_58: -1714934997
+      SpirteSheetPortal_59: -737140686
+      SpirteSheetPortal_6: 1832148549
+      SpirteSheetPortal_60: 1212152017
+      SpirteSheetPortal_61: 1741413854
+      SpirteSheetPortal_62: 1763380898
+      SpirteSheetPortal_63: -1712587158
+      SpirteSheetPortal_64: -1843682674
+      SpirteSheetPortal_65: -429699211
+      SpirteSheetPortal_66: -1857311452
+      SpirteSheetPortal_67: 880169784
+      SpirteSheetPortal_68: -1707682583
+      SpirteSheetPortal_69: 589094071
+      SpirteSheetPortal_7: 1017537534
+      SpirteSheetPortal_70: 1926285458
+      SpirteSheetPortal_71: -640614191
+      SpirteSheetPortal_72: -341945358
+      SpirteSheetPortal_73: -639545074
+      SpirteSheetPortal_74: 1797235571
+      SpirteSheetPortal_75: -1009838844
+      SpirteSheetPortal_76: -860837943
+      SpirteSheetPortal_77: -701988586
+      SpirteSheetPortal_78: 446772937
+      SpirteSheetPortal_79: -813671507
+      SpirteSheetPortal_8: -1592894220
+      SpirteSheetPortal_80: -1239476460
+      SpirteSheetPortal_81: 218773850
+      SpirteSheetPortal_82: 1648287904
+      SpirteSheetPortal_83: -1551289808
+      SpirteSheetPortal_9: 1618725593
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

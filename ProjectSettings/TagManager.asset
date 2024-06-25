@@ -7,6 +7,14 @@ TagManager:
   - Ground
   - Challenge
   - MeleeEnemy
+  - Dead
+  - BlackFirst
+  - Sand
+  - Snow
+  - Grass
+  - Wood
+  - Mud
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX
